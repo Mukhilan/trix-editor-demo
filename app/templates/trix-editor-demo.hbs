@@ -1,0 +1,17 @@
+<div class="ui two column middle aligned very relaxed stackable grid">
+    <div class="center column">
+      <h2 class="center" id="title">Trix Editor</h2>
+      {{trix-editor autofocus=true placeholderText="Provide a brief description ..." value=value count=count textContent=textContent}}
+    </div>
+    <div class="ui vertical divider">
+        {{count}}
+    </div>
+    <div class="center aligned column">
+        <h2 class="center" id="title">Text content</h2><br>
+        {{textContent}}
+    </div>
+    <div class="center aligned column">
+        <h2 class="center" id="title">HTML content</h2><br>
+        {{{value}}}
+    </div>
+</div>

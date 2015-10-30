@@ -1,0 +1,21 @@
+<div class="ui top attached menu" id="trix-toolbar">
+    <div class="small basic icon buttons ui main menu">
+        {{#ui-button class="bold" clicked="fontFormattingAction" clickedParam="bold" icon="bold"}}{{/ui-button}}
+        {{#ui-button class="italic" clicked="fontFormattingAction" clickedParam="italic" icon="italic"}}{{/ui-button}}
+        {{#ui-button class="strike" clicked="fontFormattingAction" clickedParam="strike" icon="strikethrough"}}{{/ui-button}}
+    </div>&nbsp;&nbsp;
+
+    <div class="small basic icon buttons ui main menu">
+      {{#ui-button class="number" clicked="fontFormattingAction" clickedParam="number" icon="ordered list"}}{{/ui-button}}
+      {{#ui-button class="bullet" clicked="fontFormattingAction" clickedParam="bullet" icon="list"}}{{/ui-button}}
+    </div>&nbsp;&nbsp;
+
+    <div class="small basic icon buttons ui main menu">
+      {{#ui-button class="link" clicked="linkAction" icon="linkify"}}{{/ui-button}}
+      {{#ui-button class="unlink" clicked="unlinkAction" icon="unlink"}}{{/ui-button}}
+    </div>&nbsp;&nbsp;
+</div>
+
+<trix-editor placeholder={{placeholderText}} input="trix-input-editor" autofocus={{autofocus}} toolbar="trix-toolbar"></trix-editor>
+<input id="trix-input-editor" type="hidden">
+
